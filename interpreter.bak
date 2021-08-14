@@ -1,0 +1,15 @@
+#lang racket
+
+(provide all-defined-out)
+
+;;constructor
+(define (make-binding v1 v2)
+  (list v1 v2))
+
+(define (binding-variable b)
+  (car b))
+(define (binding-value b)
+  (cadr b))
+
+
+
